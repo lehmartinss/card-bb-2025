@@ -1,27 +1,25 @@
 'use strict'
 
-const disciplinas = [
-    {nome: 'PPDM', icon:'mobile.png', cor: 'turquoise'},
-    {nome: 'PRO', icon:'projetos.png', cor: 'springGreen'},
-    {nome: 'PWBE', icon:'backend.png', cor: 'violet'},
-    {nome: 'PWFE', icon:'frontend.png', cor: 'orange'},
+const perfumes = [
+    {nome: 'Choc', icon:'egeoChoc.png', cor: 'turquoise'},
+    {nome: 'Red', icon:'egeoRed.png', cor: 'springGreen'},
+    {nome: 'Vanilla', icon:'egeoVanilla.png', cor: 'violet'},
 ]
 
-function criarMenu(disciplina){
+function criarMenu(perfume){
     const novoItem = document.createElement('li')
     const novaImagem = document.createElement('img')
     const novoSpan = document.createElement('span')
     const lista = document.getElementById('menu')
 
-    novaImagem.src = `./img/${disciplina.icon}`
-    novoSpan.textContent = disciplina.nome
+    novaImagem.src = `./img/${perfume.icon}`
+    novoSpan.textContent = perfume.nome
 
     novoItem.appendChild(novaImagem)
     novoItem.appendChild(novoSpan)
-    novoItem.style = `--cor-hover:${disciplina.cor}`
+    novoItem.style = `--cor-hover:${perfume.cor}`
 
     lista.appendChild(novoItem)
 
 }
-
-disciplinas.forEach(criarMenu)
+perfumes.forEach(criarMenu)
