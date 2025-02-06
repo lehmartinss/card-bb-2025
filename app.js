@@ -1,10 +1,10 @@
 'use strict'
 
 const disciplinas = [
-    {nome: 'PPDM', icon:'facebook.png'},
-    {nome: 'PRO', icon:'gmail.png'},
-    {nome: 'PWBE', icon:'instagram.png'},
-    {nome: 'PWFE', icon:'youtube.png'},
+    {nome: 'PPDM', icon:'mobile.png', cor: 'turquoise'},
+    {nome: 'PRO', icon:'projetos.png', cor: 'springGreen'},
+    {nome: 'PWBE', icon:'backend.png', cor: 'violet'},
+    {nome: 'PWFE', icon:'frontend.png', cor: 'orange'},
 ]
 
 function criarMenu(disciplina){
@@ -18,6 +18,7 @@ function criarMenu(disciplina){
 
     novoItem.appendChild(novaImagem)
     novoItem.appendChild(novoSpan)
+    novoItem.style = `--cor-hover:${disciplina.cor}`
 
     lista.appendChild(novoItem)
 
