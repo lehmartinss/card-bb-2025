@@ -1,6 +1,6 @@
 # Card's 
 
-![](./Captura%20de%20tela%20.png)
+![](./img/Captura%20de%20tela%20.png)
 
 ---
 
